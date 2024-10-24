@@ -19,8 +19,6 @@ services:
   app:
     container_name: app
     build: .
-    volumes:
-      - ./src:/app/src
     ports:
       - "8000:8000"
     networks:
@@ -49,5 +47,4 @@ networks:
 
 volumes:
   postgres:
-  app:
   pgadmin:
