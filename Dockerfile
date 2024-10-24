@@ -12,7 +12,5 @@ WORKDIR /app/src
 
 COPY src .
 
-RUN poetry run alembic upgrade head
-
 EXPOSE 8000
 ENTRYPOINT ["poetry", "run", "python", "main.py"]
